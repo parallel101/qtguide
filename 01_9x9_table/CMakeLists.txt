@@ -5,6 +5,15 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
+if (MSVC)
+    add_compile_options(/Zc:preprocessor /utf-8 /DNOMINMAX /D_USE_MATH_DEFINES /EHsc /bigobj)
+else()
+    if (WIN32)
+        add_compile_options(-finput-charset=utf-8 -fexec-charset=utf-8)
+    endif()
+    add_compile_options(-Wall -Wextra -Werror=return-type)
+endif()
+
 project(qtguide)
 
 find_package(Qt5 REQUIRED COMPONENTS Core Widgets REQUIRED)
