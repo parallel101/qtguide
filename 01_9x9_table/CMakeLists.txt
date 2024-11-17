@@ -14,10 +14,10 @@ else()
     add_compile_options(-Wall -Wextra -Werror=return-type)
 endif()
 
-project(qtguide)
+project(01_9x9_table)
 
 find_package(Qt5 REQUIRED COMPONENTS Core Widgets REQUIRED)
 
 file(GLOB sources *.cpp)
-add_executable(qtguide ${sources})
-target_link_libraries(qtguide PRIVATE Qt5::Core Qt5::Widgets)
+add_executable(01_9x9_table ${sources})
+target_link_libraries(01_9x9_table PRIVATE Qt5::Core Qt5::Widgets)
