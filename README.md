@@ -38,8 +38,8 @@ pacman -S qt5-base
 
 这是 Windows C++ 的多个不同版本的 ABI，互不兼容！
 
-- 如果你想要使用 64 位 MSVC 编译器，那就得勾选 `msvc2017_64` 来安装，安装以后的 dll 文件会位于 `C:/Qt5/msvc2017_64/bin`，需要设置环境变量 `Qt5_DIR` 为 `C:/Qt5/mingw53_64/lib/cmake`，添加环境变量 `PATH` 为 `C:/Qt5/mingw53_64/bin`。
-- 如果你想要使用 64 位 MinGW 编译器，那就得勾选 `mingw53_64` 来安装，安装以后的 dll 文件会位于 `C:/Qt5/mingw53_64/bin`，需要设置环境变量 `Qt5_DIR` 为 `C:/Qt5/mingw53_64/lib/cmake`，添加环境变量 `PATH` 为 `C:/Qt5/msvc2017_64/bin`。
+- 如果你想要使用 64 位 MSVC 编译器，那就得勾选 `msvc2017_64` 来安装，安装以后的 dll 文件会位于 `C:/Qt5/msvc2017_64/bin`，需要设置环境变量 `Qt5_DIR` 为 `C:/Qt5/msvc2017_64/lib/cmake`，添加环境变量 `PATH` 为 `C:/Qt5/mingw53_64/bin`。
+- 如果你想要使用 64 位 MinGW 编译器，那就得勾选 `mingw53_64` 来安装，安装以后的 dll 文件会位于 `C:/Qt5/mingw53_64/bin`，需要设置环境变量 `Qt5_DIR` 为 `C:/Qt5/mingw53_64/lib/cmake`，添加环境变量 `PATH` 为 `C:/Qt5/mingw53_64/bin`。
 
 建议新手勾选 `mingw53_64`、`Qt Creator`、`MinGW 编译器` 选项，避免配置编译器的烦恼。
 
