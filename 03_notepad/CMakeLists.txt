@@ -17,10 +17,11 @@ else()
     add_compile_options(-Wall -Wextra -Werror=return-type)
 endif()
 
-project(01_9x9_table)
+project(03_notepad)
 
 find_package(Qt5 REQUIRED COMPONENTS Core Widgets REQUIRED)
 
 file(GLOB sources *.cpp)
-add_executable(01_9x9_table ${sources})
-target_link_libraries(01_9x9_table PRIVATE Qt5::Core Qt5::Widgets)
+add_executable(03_notepad ${sources})
+target_link_libraries(03_notepad PRIVATE Qt5::Core Qt5::Widgets)
+target_include_directories(03_notepad PRIVATE .)
