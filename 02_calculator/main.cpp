@@ -282,6 +282,7 @@ public:
     void pressNumber(int i) {
         if (m_needClearInput) {
             setLineText("0");
+            m_needClearInput = false;
         }
         QString text = m_line->text();
         text += QString::number(i);
