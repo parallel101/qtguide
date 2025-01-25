@@ -48,13 +48,38 @@ public:
 };
 
 const std::array<EditorFactory *, MaxEditorType> kEditorFactories = {
-    EditorFactoryBuilder().withType<BoolEditor>().withProperty(Editor::TitleRole, new StringValue("国家补贴")).build(),
-    EditorFactoryBuilder().withType<BoolEditor>().withProperty(Editor::TitleRole, new StringValue("辣椒抵用券")).build(),
-    EditorFactoryBuilder().withType<BoolEditor>().withProperty(Editor::TitleRole, new StringValue("甜蜜抵用券")).build(),
-    EditorFactoryBuilder().withType<BoolEditor>().withProperty(Editor::TitleRole, new StringValue("商家折扣")).build(),
-    EditorFactoryBuilder().withType<IntEditor>().withProperty(Editor::TitleRole, new StringValue("淘气值")).withProperty(Editor::MinValueRole, new IntValue(0)).withProperty(Editor::MaxValueRole, new IntValue(5)).build(),
-    EditorFactoryBuilder().withType<IntEditor>().withProperty(Editor::TitleRole, new StringValue("杀气值")).withProperty(Editor::MinValueRole, new IntValue(0)).withProperty(Editor::MaxValueRole, new IntValue(10)).build(),
-    EditorFactoryBuilder().withType<StringEditor>().withProperty(Editor::TitleRole, new StringValue("客户姓名")).build(),
+    EditorFactoryBuilder()
+        .withType<BoolEditor>()
+        .withProperty(Editor::TitleRole, new StringValue("国家补贴"))
+        .build(),
+    EditorFactoryBuilder()
+        .withType<BoolEditor>()
+        .withProperty(Editor::TitleRole, new StringValue("辣椒抵用券"))
+        .build(),
+    EditorFactoryBuilder()
+        .withType<BoolEditor>()
+        .withProperty(Editor::TitleRole, new StringValue("甜蜜抵用券"))
+        .build(),
+    EditorFactoryBuilder()
+        .withType<BoolEditor>()
+        .withProperty(Editor::TitleRole, new StringValue("商家折扣"))
+        .build(),
+    EditorFactoryBuilder()
+        .withType<IntEditor>()
+        .withProperty(Editor::TitleRole, new StringValue("淘气值"))
+        .withProperty(Editor::MinValueRole, new IntValue(0))
+        .withProperty(Editor::MaxValueRole, new IntValue(5))
+        .build(),
+    EditorFactoryBuilder()
+        .withType<IntEditor>()
+        .withProperty(Editor::TitleRole, new StringValue("杀气值"))
+        .withProperty(Editor::MinValueRole, new IntValue(0))
+        .withProperty(Editor::MaxValueRole, new IntValue(10))
+        .build(),
+    EditorFactoryBuilder()
+        .withType<StringEditor>()
+        .withProperty(Editor::TitleRole, new StringValue("客户姓名"))
+        .build(),
 };
 
 PriceCalc::PriceCalc(QWidget *parent)
