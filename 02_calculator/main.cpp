@@ -258,6 +258,7 @@ public:
     void pressSign() {
         if (m_needClearInput) {
             setLineText("0");
+            m_needClearInput = false;
         }
         QString text = m_line->text();
         if (!text.isEmpty()) {
@@ -273,6 +274,7 @@ public:
     void pressDot() {
         if (m_needClearInput) {
             setLineText("0");
+            m_needClearInput = false;
         }
         QString text = m_line->text();
         text += ".";
@@ -282,6 +284,7 @@ public:
     void pressNumber(int i) {
         if (m_needClearInput) {
             setLineText("0");
+            m_needClearInput = false;
         }
         QString text = m_line->text();
         text += QString::number(i);
@@ -291,6 +294,7 @@ public:
     void pressBackspace() {
         if (m_needClearInput) {
             setLineText("0");
+            m_needClearInput = false;
         }
         QString text = m_line->text();
         if (!text.isEmpty()) {
